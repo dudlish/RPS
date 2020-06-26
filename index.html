@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="gradient">
+	<header>
+		<h1>Rock Paper Scissors Game</h1>
+	</header>
+
+	<!-- Choose rock paper or scissors "buttons" -->
+	<div class="choices">
+		<div class="choice" id="choice-rock">
+			<img src="rock100.png" alt="rock">
+		</div>
+		<div class="choice" id="choice-paper">
+			<img src="paper100.png" alt="paper">
+		</div>
+		<div class="choice" id="choice-scissors">
+			<img src="scissors100.png" alt="scissors">
+		</div>
+
+	</div>
+
+	<!-- Scoreboard -->
+	<div class="hidden-start leaderboard" hidden>
+		<div id="player1-name" class="leaderboard-name">Player 1</div>
+		<div id="player2-name" class="leaderboard-name">Player 2</div>
+		<div class="scores"><span id="player1-score">0</span> : <span id="player2-score">0</span></div>
+
+	</div>
+
+	<!-- Who is the current winner -->
+	<div class="result" class="hidden-start" hidden>
+		<p>Player 1 wins!</p>
+	</div>
+
+	<p id="next-move" class="hidden-start" hidden>Make your new choice</p>
+
+	<!-- Before the game actually starts: write players' names and click start button -->
+	<div class="hidden-main">
+		<h2>Who's gonna play?</h2>
+	</div>
+
+	<div class="hidden-main">
+		<input class="player1" type="text" name="player1" placeholder="Player One">
+		<input class="player2" type="text" name="player2" placeholder="Player Two">
+	</div>
+
+	<div class="hidden-main">
+		<button id="b1">Let the game begin!</button>
+	</div>
+
+	<h3></h3>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
