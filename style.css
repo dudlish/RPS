@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+	background: linear-gradient(to right, pink , violet);
+}
+
+header { 
+    padding: 20px;
+}
+
+header > h1 {
+    font: 600 4.5em 'Montserrat', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h3 {
+	font: 900 1em 'Montserrat', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+
+}
+
+.leaderboard{
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 500px;
+    height: 150px;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.leaderboard-name{
+    font-size: 25px;
+    padding: 2px 10px;
+}
+
+#player1-name {
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    top: - 15px;
+    left: - 155px;
+}
+
+#player2-name {
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.scores {
+    position: absolute;
+    left: 190px;
+    bottom: 25px;
+}
+
+.result {
+    font-size: 40px;
+}
+
+.choices {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.choice {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 15px;
+    display: inline-block;
+    transition: all 0.3 ease;
+}
+
+.choice:hover {
+    /* background-color: rgb(248, 217, 222); */
+    background-color: #cc69ab;
+    cursor: pointer;
+}
+
+#next-move {
+    /* padding: 15px; */
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.players {
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 30px;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #cc69ab;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    }
+
+input[type=text] {
+    width: 15%;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+
+input[type=text]:focus {
+    background-color: #f8d5ec;
+}
