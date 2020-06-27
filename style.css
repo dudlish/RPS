@@ -44,7 +44,7 @@ h3 {
     margin: 20px auto;
     border: 3px solid white;
     border-radius: 10px;
-    width: 500px;
+    width: 600px;
     height: 150px;
     font-size: 40px;
     text-align: center;
@@ -59,15 +59,15 @@ h3 {
 
 #player1-name {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 200;
     position: absolute;
     top: - 15px;
     left: - 155px;
 }
 
-#player2-name {
+#computer-name {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 200;
     position: absolute;
     top: 15px;
     right: 15px;
@@ -75,30 +75,42 @@ h3 {
 
 .scores {
     position: absolute;
-    left: 190px;
     bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .result {
     font-size: 40px;
 }
 
-.choices {
+/* .choices-active {
     text-align: center;
     margin: 20px 0;
-}
+} */
 
-.choice {
+.choice-active {
     border: 1px solid white;
     border-radius: 50%;
     padding: 15px;
     margin: 0 15px;
     display: inline-block;
     transition: all 0.3 ease;
+    opacity: 0.5;
 }
 
-.choice:hover {
-    /* background-color: rgb(248, 217, 222); */
+/* .choice-inactive {
+    opacity: 0.5;
+    padding: 15px;
+    margin: 0 15px;
+    display: inline-block;
+    transition: all 0.3 ease;
+} */
+
+.choice-active:hover {
     background-color: #cc69ab;
     cursor: pointer;
 }
@@ -134,7 +146,7 @@ button:hover {
     }
 
 input[type=text] {
-    width: 15%;
+    width: 20%;
     padding: 15px 22px;
     margin: 10px 5px;
     border-radius: 10px;
