@@ -13,47 +13,45 @@
 
 	<!-- Choose rock paper or scissors "buttons" -->
 	<div class="choices">
-		<div class="choice-active choice-inactive" id="choice-rock">
+		<div class="choice" id="choice-rock">
 			<img src="rock100.png" alt="rock">
 		</div>
-		<div class="choice-active choice-inactive" id="choice-paper">
+		<div class="choice" id="choice-paper">
 			<img src="paper100.png" alt="paper">
 		</div>
-		<div class="choice-active choice-inactive" id="choice-scissors">
+		<div class="choice" id="choice-scissors">
 			<img src="scissors100.png" alt="scissors">
 		</div>
 
 	</div>
 
 	<!-- Scoreboard -->
-	<div class="hidden-start leaderboard">
+	<div class="hidden leaderboard">
 		<div id="player1-name" class="leaderboard-name">Player 1</div>
 		<div id="computer-name" class="leaderboard-name">Computer</div>
 		<div class="scores"><span id="player1-score">0</span> : <span id="computer-score">0</span></div>
 
 	</div>
 
-	<!-- Who is the current winner -->
-	<div class="result" class="hidden-start" hidden>
-		<p>Player 1 wins!</p>
+	<!-- Who is the current winner (..you win..) -->
+	<div class="result hidden">
+		<p>Make your choice</p>
 	</div>
 
-	<p id="next-move" class="hidden-start" hidden>Make your new choice</p>
-
-	<!-- Before the game actually starts: write players' names and click start button -->
+	<!-- Before the game actually starts: write player's name and click start button -->
 	<div class="hidden-main">
 		<h2>Who's gonna play?</h2>
 	</div>
 
 	<div class="hidden-main">
-		<input class="player1" type="text" name="player1" placeholder="Fill in your name">
+		<input class="player1" type="text" name="player1" id="playerName"
+			placeholder="Fill in your name and click START">
 	</div>
 
 	<div class="hidden-main">
-		<button id="b1">Let the game begin!</button>
+		<button id="b1" disabled>START</button>
 	</div>
 
-	<h3></h3>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 
